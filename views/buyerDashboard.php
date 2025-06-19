@@ -91,38 +91,11 @@ $orders = new Order($pdo);
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>#12345</td>
-                            <td>Wireless Headphones</td>
-                            <td>Shipped</td>
-                            <td>$99.99</td>
-                            <td>
-                                <button class="btn btn-outline-success btn-md">Track</button>
-                                <button class="btn btn-outline-secondary btn-md">Invoice</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>#12436</td>
-                            <td>Running Shoes</td>
-                            <td>Delivered</td>
-                            <td>$59.99</td>
-                            <td>
-                                <button class="btn btn-outline-success btn-md">Track</button>
-                                <button class="btn btn-outline-secondary btn-md">Invoice</button>
-                            </td>
-                        </tr>
+                        <!-- Nothing for Now -->
                     </tbody>
                 </table>
             </section>
         </div>
-        <!-- <ul class="nav flex-column">
-            <li onclick="location.href='../views/buyerDashboard.php'" style="margin-bottom: 10px;padding: 10px;background-color: #d0f0c0; border-radius: 5px" class="nav-item btn btn-light mb-2">Dashboard</li>
-            <li onclick="location.href='../public/index.php'" style="margin-bottom: 10px;padding: 10px;background-color: #d0f0c0; border-radius: 5px" class="nav-item btn btn-light mb-2">Product Catalog</li>
-            <li onclick="location.href='../public/orders.php'" style="margin-bottom: 10px;padding: 10px;background-color: #d0f0c0; border-radius: 5px" class="nav-item btn btn-light mb-2">My Orders</li>
-            <li onclick="location.href='../public/cart.php'" style="margin-bottom: 10px;padding: 10px;background-color: #d0f0c0; border-radius: 5px" class="nav-item btn btn-light mb-2">Cart</li>
-            <li onclick="location.href='../views/settings.php'" style="margin-bottom: 10px;padding: 10px;background-color: #d0f0c0; border-radius: 5px" class="nav-item btn btn-light mb-2">Settings</li>
-            <li onclick="location.href='../controllers/authSeller.php'" style="margin-bottom: 10px;padding: 10px;background-color: #d0f0c0; border-radius: 5px" class="nav-item btn btn-light mb-2">Become a Seller</li>
-        </ul> -->
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

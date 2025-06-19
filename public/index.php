@@ -67,6 +67,11 @@ $user = $_SESSION['user'];
             ?>
                 <div class="col-md-4">
                     <div class="card mb-4">
+                        <?php if (!empty($product['image'])): ?>
+                            <img src="<?= htmlspecialchars($product['image']) ?>" class="card-img-top" alt="<?= htmlspecialchars($product['name']) ?>" style="height: 200px; object-fit: cover;">
+                        <?php else: ?>
+                            <img src="./logo.png" class="card-img-top" alt="No Image Available" style="height: 200px; object-fit: cover;">
+                        <?php endif; ?>
                         <div class="card-body">
                             <h5 class="card-title"><?= htmlspecialchars($product['name']) ?></h5>
                             <p class="card-text"><?= htmlspecialchars($product['description']) ?></p>

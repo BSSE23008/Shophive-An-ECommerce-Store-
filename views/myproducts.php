@@ -122,6 +122,10 @@ $categories = ['Electronics', 'Books', 'Clothing', 'Home', 'Beauty'];
                             <?php endforeach; ?>
                         </select>
                     </div>
+                    <div class="mb-3">
+                        <label class="form-label">Image URL</label>
+                        <input type="url" id="product_image" name="image" class="form-control" placeholder="https://example.com/image.jpg" required>
+                    </div>
                     <div class="mb-3"><label class="form-label">Price ($)</label><input type="number" step="0.01" id="product_price" name="price" class="form-control" required></div>
                     <div class="mb-3"><label class="form-label">Stock</label><input type="number" id="product_stock" name="stock" class="form-control" required></div>
                 </div>
@@ -149,6 +153,7 @@ $categories = ['Electronics', 'Books', 'Clothing', 'Home', 'Beauty'];
             document.getElementById('product_price').value = prod.price;
             document.getElementById('product_stock').value = prod.stock;
             document.getElementById('product_cat').value = prod.category;
+            document.getElementById('product_image').value = prod.image;
             new bootstrap.Modal(document.getElementById('productModal')).show();
         }
 

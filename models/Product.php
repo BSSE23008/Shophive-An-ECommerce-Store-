@@ -8,12 +8,12 @@ class Product
         $this->pdo = $pdo;
     }
 
-    public function addProduct($name, $desc, $price, $category, $stock, $seller_id)
+    public function addProduct($name, $desc, $price, $category, $stock, $seller_id, $image)
     {
         $stmt = $this->pdo->prepare(
-            "INSERT INTO Product (name, description, price, category, stock, seller_id) VALUES (?, ?, ?, ?, ?, ?)"
+            "INSERT INTO Product (name, description, price, category, stock, seller_id, image) VALUES (?, ?, ?, ?, ?, ?, ?)"
         );
-        return $stmt->execute([$name, $desc, $price, $category, $stock, $seller_id]);
+        return $stmt->execute([$name, $desc, $price, $category, $stock, $seller_id, $image]);
     }
 
     public function updateProduct($id, $name, $desc, $price, $category, $stock)

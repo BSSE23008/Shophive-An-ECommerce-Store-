@@ -58,6 +58,7 @@ try {
             category VARCHAR(100),
             stock INT,
             seller_id INT,
+            image VARCHAR(1000),
             FOREIGN KEY (seller_id) REFERENCES Seller (seller_id)
         );
 

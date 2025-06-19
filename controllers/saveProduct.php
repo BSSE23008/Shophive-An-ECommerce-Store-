@@ -24,7 +24,8 @@ if (isset($data['delete_id'])) {
         $data['price'],
         $data['category'],
         $data['stock'],
-        $sellerId
+        $sellerId, 
+        $data['image']
     );
 }
 

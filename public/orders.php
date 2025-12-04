@@ -11,7 +11,7 @@ if (!isset($_SESSION['user'])) {
 $customer_id = $_SESSION['user']['customer_id'];
 $orderModel = new Order($pdo);
 
-// Fetch all orders for this customer
+// Fetch all the orders for this customer
 $orders = $orderModel->getOrdersByCustomerId($customer_id);
 ?>
 
